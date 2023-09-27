@@ -23,6 +23,7 @@ func main() {
 	fmt.Println("Welcome to my game!")
 	var name string
 // Scan allows you to enter a variable see below
+// & allows you to set reference to that variable.
 	fmt.Scan(&name)
 	fmt.Println(name)
 }
