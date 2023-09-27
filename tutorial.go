@@ -21,12 +21,19 @@ import "fmt"
 
 func main() {
 	fmt.Println("Welcome to my game!")
+	fmt.Printf("Enter your name: ")
+	// \n will create a line break
 	var name string
-	// var age int
+
 // Scan allows you to enter a variable see below
 // & allows you to set reference to that variable.
 	fmt.Scan(&name)
-	// fmt.Scan(&age)
-	fmt.Printf("Welcome to my game %v!", name)
+	
+	fmt.Printf("Hello %v, Welcome to my game! You're %v years old!", name, age)
+
+	fmt.Printf("Enter your age: ")
+	// uint will not allow a negative value.
+	var age uint
+	fmt.Scan(&age)
 	// fmt.Println(age)
 }
