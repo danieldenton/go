@@ -47,5 +47,6 @@ func main() {
 	var answer2 string
 	fmt.Scan(&answer, &answer2)
 	// if there was a space in the answer the answer variable decleration would be over.
+	// if there's 2 variables it's gonna wait for 2 variables.
 	fmt.Println(answer, answer2)
 }
