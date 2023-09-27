@@ -37,5 +37,7 @@ func main() {
 	fmt.Scan(&age)
 	if age >= 10 {
 		fmt.Println("Yay you can play!")
+	} else {
+		fmt.Print("Sorry bud. you can't play.")
 	}
 }
