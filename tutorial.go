@@ -39,5 +39,13 @@ func main() {
 		fmt.Println("Yay you can play!")
 	} else {
 		fmt.Print("Sorry bud. you can't play.")
+		return
 	}
+
+	fmt.Printf("Which is better? yellow mornings or orange nights? ")
+	var answer string
+	var answer2 string
+	fmt.Scan(&answer, &answer2)
+	// if there was a space in the answer the answer variable decleration would be over.
+	fmt.Println(answer, answer2)
 }
