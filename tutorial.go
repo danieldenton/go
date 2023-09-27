@@ -29,11 +29,13 @@ func main() {
 // & allows you to set reference to that variable.
 	fmt.Scan(&name)
 	
-	fmt.Printf("Hello %v, Welcome to my game!", name)
+	fmt.Printf("Hello %v, Welcome to my game!\n", name)
 
 	fmt.Printf("Enter your age: ")
 	// uint will not allow a negative value.
 	var age uint
 	fmt.Scan(&age)
-	fmt.Println(age >= 10) //This will return a boolean 
+	if age >= 10 {
+		fmt.Println("Yay you can play!")
+	}
 }
