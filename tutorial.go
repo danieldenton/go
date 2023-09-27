@@ -22,8 +22,11 @@ import "fmt"
 func main() {
 	fmt.Println("Welcome to my game!")
 	var name string
+	// var age int
 // Scan allows you to enter a variable see below
 // & allows you to set reference to that variable.
 	fmt.Scan(&name)
-	fmt.Println(name)
+	// fmt.Scan(&age)
+	fmt.Printf("Welcome to my game %v!", name)
+	// fmt.Println(age)
 }
