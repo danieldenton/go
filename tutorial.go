@@ -42,6 +42,9 @@ func main() {
 		return
 	}
 
+	score := 0
+	num_questions := 2
+
 	fmt.Printf("Which is better? yellow mornings or orange nights? ")
 	var answer string
 	var answer2 string
@@ -52,9 +55,26 @@ func main() {
 
 	if answer + " " + answer2 == "orange nights" { //must include a space!
 		fmt.Println("You are correct!")
-	} else  if answer + " " + answer2 == "yellow mornings"{
+		score += 1
+	} else  if answer + " " + answer2 == "yellow mornings" {
 		fmt.Println("WRONG")
 	} else {
 		fmt.Println("What?")
 	}
+
+	fmt.Printf("Are the Clippers better then the Lakers? ")
+	var answer3 string
+	fmt.Scan(&answer3)
+
+	if answer3 == "YES" || answer3 == "yes" || answer3 == "Yes" {
+		fmt.Println("You are correct!")
+		score += 1
+	} else if answer3 == "NO" || answer3 == "no" || answer3 == "No" {
+		fmt.Println("WRONG")
+	} else {
+		fmt.Println("What?")
+	}
+
+	fmt.Printf("You scored %v out of %v.", score, num_questions)
+
 }
